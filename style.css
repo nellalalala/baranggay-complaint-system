@@ -458,3 +458,15 @@ input:disabled {
     grid-template-columns: 1fr;
   }
 }
+/* Required Field Asterisk */
+.required {
+  color: #DC2626;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+.required-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}

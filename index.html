@@ -33,16 +33,13 @@
     <section id="resident-view" class="portal-section">
       <div class="grid-two-col">
         
-        <!-- Submit Complaint Card -->
-        <div class="card">
-          <div class="card-header">
-            <h2>Submit a Community Concern</h2>
-            <p class="subtitle">Report noise, waste, or neighborhood issues directly to barangay officials.</p>
-          </div>
+        <!-- Resident Submit Form -->
           <form id="complaint-form">
+            <p class="required-note"><span class="required">*</span> Indicates required field</p>
+
             <div class="form-group">
               <div class="label-row">
-                <label for="complainant">Complainant Name</label>
+                <label for="complainant">Complainant Name <span class="required">*</span></label>
                 <label class="checkbox-label">
                   <input type="checkbox" id="anonymous-toggle" />
                   Submit Anonymously
@@ -53,7 +50,7 @@
 
             <div class="form-row">
               <div class="form-group">
-                <label for="category">Complaint Category</label>
+                <label for="category">Complaint Category <span class="required">*</span></label>
                 <select id="category" required>
                   <option value="" disabled selected>Select category...</option>
                   <option value="Noise Disturbance">Noise Disturbance</option>
@@ -65,13 +62,13 @@
               </div>
 
               <div class="form-group">
-                <label for="location">Purok / Street</label>
+                <label for="location">Purok / Street <span class="required">*</span></label>
                 <input type="text" id="location" placeholder="e.g., Purok 3, Sampaguita St." required />
               </div>
             </div>
 
             <div class="form-group">
-              <label for="description">Description of Concern</label>
+              <label for="description">Description of Concern <span class="required">*</span></label>
               <textarea id="description" rows="4" placeholder="Provide details, time of incident, or specific landmarks..." required></textarea>
             </div>
 
@@ -114,12 +111,14 @@
           <p class="subtitle">Authorized access only for reviewing and updating resident reports.</p>
         </div>
         <form id="login-form">
+          <p class="required-note"><span class="required">*</span> Indicates required field</p>
+
           <div class="form-group">
-            <label for="admin-user">Username</label>
+            <label for="admin-user">Username <span class="required">*</span></label>
             <input type="text" id="admin-user" placeholder="admin" required />
           </div>
           <div class="form-group">
-            <label for="admin-pass">Password</label>
+            <label for="admin-pass">Password <span class="required">*</span></label>
             <input type="password" id="admin-pass" placeholder="••••••••••••" required />
           </div>
           <p id="login-error" class="error-text hidden">Invalid staff credentials. Try again.</p>
